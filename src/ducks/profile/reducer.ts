@@ -2,11 +2,8 @@ import { ProfileReducer, ProfileActionTypes, SET_USER_PROFILE, UNSET_USER_PROFIL
 
 const INITIAL_STATE: ProfileReducer = {
   details: {
-    id: '',
-    birthday: '',
-    picture: '',
-    friends: [],
-    favorites: {},
+    name: '',
+    lastname: '',
   },
 };
 
