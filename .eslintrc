@@ -7,8 +7,9 @@
       "modules": true
     }
   },
-  "extends": ["plugin:react/recommended", "prettier"],
+  "extends": ["plugin:react/recommended", "prettier", "eslint:recommended"],
   "env": {
+    "node": true,
     "es6": true,
     "jest": true,
     "browser": true

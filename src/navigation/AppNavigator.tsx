@@ -6,8 +6,8 @@ import {
   createReactNavigationReduxMiddleware,
 } from 'react-navigation-redux-helpers';
 import { AppState } from 'ducks';
-import {BottomTabs} from 'components';
-import {Splash, Home} from 'screens';
+import { BottomTabs } from 'components';
+import { Splash, Home } from 'screens';
 import { HOME_SCREEN } from './screens';
 import { HOME_STACK } from './stacks';
 
@@ -16,17 +16,20 @@ const HomeStack = createBottomTabNavigator(
   {
     [HOME_SCREEN]: Home,
   },
-  {tabBarComponent: (props) => <BottomTabs {...props} style={{ borderTopColor: '#605F60' }} />,
-      defaultNavigationOptions: () => ({
-          tabBarOnPress: ({ defaultHandler }) => {
-              defaultHandler();
-          },
-          tabBarOptions: {
-              showLabel: false,
-              style: { height: 80, borderTopColor: '#42c8f4', borderTopWidth: 1 },
-          },
-          header: null,
-      })}
+  {
+    // eslint-disable-next-line react/display-name
+    tabBarComponent: (props) => <BottomTabs {...props} style={{ borderTopColor: '#605F60' }} />,
+    defaultNavigationOptions: () => ({
+      tabBarOnPress: ({ defaultHandler }) => {
+        defaultHandler();
+      },
+      tabBarOptions: {
+        showLabel: false,
+        style: { height: 80, borderTopColor: '#42c8f4', borderTopWidth: 1 },
+      },
+      header: null,
+    }),
+  }
 );
 
 export const AppNavigator = createStackNavigator(
