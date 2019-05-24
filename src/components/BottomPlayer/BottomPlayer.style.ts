@@ -1,20 +1,17 @@
 import styled from '@emotion/native';
-import { flexCenterHorizontal, flex } from 'theme/functions';
-import VectorIcon from 'react-native-vector-icons/dist/Ionicons';
+import { flexCenterHorizontal, flex, row, flexCenter } from 'theme/functions';
 
-export const TabsWrapper = styled.View(({ theme }: any) => ({
-  flexDirection: 'row',
-  paddingTop: 15,
-  backgroundColor: theme.colors.grey,
-}));
-
-export const TabWrapper = styled.TouchableOpacity(flex, flexCenterHorizontal);
-
-export const TabText = styled.Text({ fontSize: 12, color: '#fff', textAlign: 'center' });
-
-export const TabActiveIndicator = styled.View({
-  height: 1,
-  width: null,
+export const Wrapper = styled.View(flexCenter, row, {
+  paddingVertical: 5,
+  height: 50,
+  paddingHorizontal: 10,
+  borderBottomColor: '#000',
+  borderBottomWidth: 1,
 });
 
-export const TabImage = styled(VectorIcon)({ alignSelf: 'center', color: '#fff', fontSize: 19 });
+export const PlayerWrapper = styled.View(flex, row, flexCenterHorizontal, {
+  flex: 1,
+  flexDirection: 'row',
+  justifyContent: 'center',
+  paddingVertical: 5,
+});

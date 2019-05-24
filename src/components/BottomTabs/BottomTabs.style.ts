@@ -12,13 +12,9 @@ export const TabWrapper = styled.TouchableOpacity(flex, flexCenterHorizontal);
 
 export const TabText = styled.Text({ fontSize: 12, color: '#fff', textAlign: 'center' });
 
-export const TabActiveIndicator = styled.View(
-  {
-    height: 1,
-    width: null,
-  },
-);
+export const TabActiveIndicator = styled.View({
+  height: 1,
+  width: null,
+});
 
-export const TabImage = styled(VectorIcon)(
-  { alignSelf: 'center', color: '#fff', fontSize: 19 },
-);
+export const TabImage = styled(VectorIcon)({ alignSelf: 'center', color: '#fff', fontSize: 19 });

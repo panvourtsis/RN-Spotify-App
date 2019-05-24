@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native';
 import { NavigationProps } from 'ducks/navigation';
 import { HOME_SCREEN } from 'navigation';
 import { TabsWrapper, TabWrapper, TabText, TabImage, TabActiveIndicator } from './BottomTabs.style';
+import BottomPlayer from '../BottomPlayer';
 
 type Props = NavigationProps & {};
 
@@ -13,6 +14,7 @@ const BottomTabs = ({ navigation }: Props) => {
 
   return (
     <SafeAreaView style={{ backgroundColor: '#282828' }}>
+      <BottomPlayer />
       <TabsWrapper>
         <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
           <TabImage name={'ios-home'} />
