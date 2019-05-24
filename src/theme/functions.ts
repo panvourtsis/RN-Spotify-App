@@ -19,7 +19,7 @@ export const flexCenterHorizontal = css`
 `;
 
 export const flexCenterAll = css`
-  align-self: 'center',
+  align-self: center;
   justify-content: center;
   align-items: center;
 `;

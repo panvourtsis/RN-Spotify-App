@@ -23,10 +23,6 @@ const HomeStack = createBottomTabNavigator(
       tabBarOnPress: ({ defaultHandler }) => {
         defaultHandler();
       },
-      tabBarOptions: {
-        showLabel: false,
-        style: { height: 80, borderTopColor: '#42c8f4', borderTopWidth: 1 },
-      },
       header: null,
     }),
   }
