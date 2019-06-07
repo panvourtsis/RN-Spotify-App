@@ -13,36 +13,38 @@ const BottomTabs = ({ navigation }: Props) => {
   const routeName = currentRoute.routeName;
 
   return (
-    <SafeAreaView style={{ backgroundColor: '#282828' }}>
+    <>
       <BottomPlayer />
-      <TabsWrapper>
-        <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
-          <TabImage name={'ios-home'} />
-          <TabText>Home</TabText>
-          <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
-        </TabWrapper>
-        <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
-          <TabImage name={'ios-albums'} />
-          <TabText>Browse</TabText>
-          <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
-        </TabWrapper>
-        <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
-          <TabImage name={'ios-search'} />
-          <TabText>Search</TabText>
-          <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
-        </TabWrapper>
-        <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
-          <TabImage name={'ios-radio'} />
-          <TabText>Radio</TabText>
-          <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
-        </TabWrapper>
-        <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
-          <TabImage name={'ios-book'} />
-          <TabText>Library</TabText>
-          <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
-        </TabWrapper>
-      </TabsWrapper>
-    </SafeAreaView>
+      <SafeAreaView style={{ backgroundColor: '#282828' }}>
+        <TabsWrapper>
+          <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
+            <TabImage name={'ios-home'} />
+            <TabText>Home</TabText>
+            <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
+          </TabWrapper>
+          <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
+            <TabImage name={'ios-albums'} />
+            <TabText>Browse</TabText>
+            <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
+          </TabWrapper>
+          <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
+            <TabImage name={'ios-search'} />
+            <TabText>Search</TabText>
+            <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
+          </TabWrapper>
+          <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
+            <TabImage name={'ios-radio'} />
+            <TabText>Radio</TabText>
+            <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
+          </TabWrapper>
+          <TabWrapper onPress={() => navigation.navigate(HOME_SCREEN)}>
+            <TabImage name={'ios-book'} />
+            <TabText>Library</TabText>
+            <TabActiveIndicator isFocused={routeName === HOME_SCREEN} />
+          </TabWrapper>
+        </TabsWrapper>
+      </SafeAreaView>
+    </>
   );
 };
 

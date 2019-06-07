@@ -2,7 +2,8 @@ import styled from '@emotion/native';
 import { flexCenterHorizontal, flex, row, flexCenter } from 'theme/functions';
 
 export const Wrapper = styled.View(flexCenter, row, {
-  paddingVertical: 5,
+  backgroundColor: '#282828',
+  paddingVertical: 10,
   height: 50,
   paddingHorizontal: 10,
   borderBottomColor: '#000',
@@ -13,5 +14,5 @@ export const PlayerWrapper = styled.View(flex, row, flexCenterHorizontal, {
   flex: 1,
   flexDirection: 'row',
   justifyContent: 'center',
-  paddingVertical: 5,
+  paddingVertical: 1,
 });
